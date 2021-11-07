@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  web:
+    image: "flask_web_app"
+    build:
+      context: ./
+      dockerfile: Dockerfile.txt
+    network_mode: "host"

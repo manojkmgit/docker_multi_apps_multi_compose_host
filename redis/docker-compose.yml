@@ -1,0 +1,5 @@
+version: "3.3"
+services:
+  redis_host:
+    image: "redis:alpine"
+    network_mode: "host"
