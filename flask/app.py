@@ -5,6 +5,8 @@ from flask import Flask
 
 app = Flask(__name__)
 cache = redis.Redis(host='192.168.0.111', port=6379)
+# or use below one
+cache = redis.Redis(host='redis_host', port=6379)
 
 def get_hit_count():
     retries = 5
